@@ -199,6 +199,8 @@ section h1 {
   to {opacity: 1}
 } */
 
+/* Media Queries */
+
 @media only screen and (max-width: 600px)  {
 
   header .menu-content div:first-of-type {
