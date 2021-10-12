@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Caslon Doric';
+    src: url('./SK_Fonts/CaslonDoric-Light.woff2') format('woff2'),
+        url('./SK_Fonts/CaslonDoric-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: 'Caslon Doric';
+    src: url('./SK_Fonts/CaslonDoric-Hairline.woff2') format('woff2'),
+        url('./SK_Fonts/CaslonDoric-Hairline.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {box-sizing:border-box}
+
+section .opening-block {
+    background-image: url("SK_Images/DJI_0176.jpeg");
+    height: 100vh;
+    width: 100vw;
+}
+
+section .down-link {
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Caslon Doric';
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+}
+
+section .opening-block h1 {
+    position: absolute;
+    z-index: 1;
+    font-family: 'caslon Doric';
+    font-size: 88px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+section h3 {
+    font-family: 'caslon Doric';
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 120px;
+    margin-bottom: 16px;
+}
+
+section h2 {
+    font-family: 'caslon Doric';
+    font-size: 62px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+section h4 {
+    font-family: 'caslon Doric';
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 80px;
+    color: #7A91A5;
+}
+
+section h6 {
+    font-family: 'caslon Doric';
+    font-size: 32px;
+    font-weight: 200;
+    color: #7A91A5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+section .grid-wrapper {
+    width: 70%;
+    margin: 0 100px 0 auto;
+}
+
+section .three-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    margin-top: 40px
+}
+
+section .three-column div { 
+    flex-basis: 30%;
+    border-top: #5BADBC solid 2px;
+
+}
+
+section .three-column p { 
+    font-family: 'caslon Doric';
+    font-weight: 300;
+    font-size: 16px;
+    color: #707070;
+    flex-basis: 30%;
+}
+
+section .small-line {
+}
+
+section .photo-slider-block {
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+}
+
+footer {    
+    font-family: 'caslon Doric';
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    width: calc(100vw - 200px);
+    border-bottom: 2px solid #7A91A6;
+    margin: 0 auto 60px auto;
+    justify-content: space-between;
+    letter-spacing: 1.2px;
+  }
+
+  footer p{
+      margin-top: 0;
+      width: 25%;
+  }
+
+  footer a {
+      width: 12.5%;
+      text-decoration: none;
+  }
+
+  footer a:first-of-type {
+      width: 50%;
+  }
+
+  footer a:last-of-type {
+      text-align: right;
+  }
+
+  footer a:nth-of-type(2) {
+      text-align: right;
+  }
+
+  
