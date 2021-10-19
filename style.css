@@ -16,11 +16,21 @@
     font-display: swap;
 }
 
+@font-face {
+  font-family: 'Caslon Doric';
+  src: url('./SK_Fonts/CaslonDoric-Regular.woff2') format('woff2'),
+      url('./SK_Fonts/CaslonDoric-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {box-sizing:border-box}
 
 
 body {
       background-color: rgb(0, 0, 0);
+      overflow-x: hidden;
 }
 
 img {
@@ -125,25 +135,42 @@ section {
 section h1 {
     position: absolute;
     z-index: 1;
-    top: 40%;
+    top: 45%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
     font-family: 'Caslon Doric';
-    font-weight: 200;
+    font-weight: 300;
     font-size: 88px;
     color: white;
     text-align: center;
 }
 
-section video {
+section .opening-video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+section .opening-video video:first-of-type {
     object-fit:contain;
-    background-repeat: repeat-y;
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
+  }
+
+  section .opening-video video:nth-of-type(2) {
+    object-fit:contain;
+    width: 100vw;
+    height: 100vh;
+    
+  }
+
+  section .opening-video video:last-of-type {
+    object-fit:contain;
+    width: 100vw;
+    height: 100vh;
+    
   }
 
   section .down-link {
@@ -276,6 +303,10 @@ section video {
       font-family: 'Caslon Doric';
       text-decoration: none;
       line-height: 1.4;
+    }
+
+    .horizontal-scroll p {
+      margin: 20px 0;
     }
 
     section:nth-of-type(3) {
@@ -484,6 +515,11 @@ section video {
       text-align: center;
       align-items: center;
       justify-content: center;
+      padding: 30px;
+    }
+
+    section .half-page:last-of-type {
+      padding: 0;
     }
 
     section .half-page p, a {
@@ -491,7 +527,6 @@ section video {
       letter-spacing: 0.4px;
       line-height: 1.4;
       text-decoration: none;
-
     }
 
     section .half-page:first-of-type {
@@ -508,9 +543,15 @@ section video {
 
     section form {
       display: flex;
-      flex-direction: column;
-      width: 523px;
+      width: 100%;
+      flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    section form label {  
+      display: block;
+      flex-basis: 100%;
     }
 
     section form label input, textarea {
@@ -520,38 +561,63 @@ section video {
       border: 1px solid #525252;
       background-color: rgba(255, 255, 255, 0.103); 
       margin-bottom: 20px;
+      position: relative;
+      padding-top: 25px;
     }
 
+    section form label input {
+      padding-top: 0px;
+    }
+
+
     section form label:nth-of-type(4), label:nth-of-type(5) {
-      width: 45%;
+      flex-basis: calc(50% - 10px);
+      
+
+    }
+
+    section form button {
+      border-radius: 20px;
+      width: 174px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+      height: 40px;
     }
 
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: rgb(255, 255, 255);
       margin: 0;
       padding: 0;
+      text-align: left;
+      font-size: 13px;
       text-align: center;
+
     }
     ::-moz-placeholder { /* Firefox 19+ */
       color: rgb(255, 255, 255);
       margin: 0;
       padding: 0;
+      text-align: left;
+      font-size: 13px;
+      position: absolute;
       text-align: center;
-
     }
     :-ms-input-placeholder { /* IE 10+ */
       color: rgb(255, 255, 255);
       margin: 0;
       padding: 0;
+      text-align: left;
+      font-size: 13px;
       text-align: center;
-
     }
     :-moz-placeholder { /* Firefox 18- */
       color: rgb(255, 255, 255);
       margin: 0;
       padding: 0;
+      text-align: left;
+      font-size: 13px;
       text-align: center;
-
     }
 
     section .half-page p {
