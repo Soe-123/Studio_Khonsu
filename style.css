@@ -63,10 +63,18 @@ header nav a {
     margin: 0 auto;
 }
 
-header nav a img{
+.desktop-logo {
+  display: block;
+}
+
+.desktop-logo img {
   width: 250px;
   position: relative;
   z-index: 30;
+}
+
+.mobile-logo {
+  display: none;
 }
 
 header nav div img{
@@ -110,7 +118,7 @@ header .menu-content {
 
 header .menu-btn a {
   text-decoration: none;
-  font-size: 36px;
+  font-size: 2.5vw;
   color: #ffffff;
   display: block;
   transition: 0.3s;
@@ -135,13 +143,15 @@ section {
 section h1 {
     position: absolute;
     z-index: 1;
-    top: 45%;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     width: 100%;
-    transform: translate(-50%, -50%);
+    padding-bottom: 6.7vw;
     font-family: 'Caslon Doric';
     font-weight: 300;
-    font-size: 88px;
+    font-size: 6vw;
     color: white;
     text-align: center;
 }
@@ -160,7 +170,7 @@ section .opening-video video:first-of-type {
   }
 
   section .opening-video video:nth-of-type(2) {
-    object-fit:contain;
+    object-fit:cover;
     width: 100vw;
     height: 100vh;
     
@@ -289,14 +299,18 @@ section .opening-video video:first-of-type {
 
     .horizontal-scroll {
       display: flex;
-      overflow: auto;
-      white-space: nowrap;
+      flex-wrap: wrap;
+      height: 600px;
+      flex-direction: column;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      width: 100%;
     }
 
     .horizontal-scroll div {
-      flex-basis: 40%;
       margin: 15px;
-      min-width: 400px;
+      display: inline-block;
+      max-width: 300px;
     }
 
     .horizontal-scroll div a {
@@ -306,33 +320,36 @@ section .opening-video video:first-of-type {
     }
 
     .horizontal-scroll p {
-      margin: 20px 0;
+      margin: 20px 0 0 0;
     }
 
     section:nth-of-type(3) {
       background-image: url("/SK_Images/Travel\ website\ 06.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-    }
-
-    section:nth-of-type(3) {
       display: flex;
       align-items: center;
     }
 
-    section:nth-of-type(3) ul {
-      list-style: none;
+    section:nth-of-type(3) div button {
       font-family: 'Caslon Doric';
-      font-weight: 300;
-      margin-right: 15px;
       color: #2D44729B;
-    }
-
-    section:nth-of-type(3) ul li {
-      margin: 30px 0;
+      margin: 10px 30px;
       font-size: 14px;
       font-weight: 300;
       line-height: 1.6;
+      display: block;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      text-align: left;
+    }
+
+    section:nth-of-type(3) div button:hover {
+      color: black;
+    }
+
+    .active {
+      color: black !important;
     }
 
     .down-link.two {
@@ -569,12 +586,52 @@ section .opening-video video:first-of-type {
       padding-top: 0px;
     }
 
-
     section form label:nth-of-type(4), label:nth-of-type(5) {
       flex-basis: calc(50% - 10px);
-      
-
     }
+
+    input[type=text]:focus {
+      background-color: rgb(255, 255, 255);
+      border: none;
+      text-align: center;
+    }
+
+    input[type=text] {
+      padding-top: 4px;
+      text-align: center;
+    }
+
+    input[type=email]:focus {
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+    }
+    
+    input[type=email] {
+      padding-top: 4px;
+      text-align: center;
+    }  
+
+    input[type=tel]:focus {
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    input[type=tel] {
+      padding-top: 4px;
+      text-align: center;
+    }  
+
+
+    textarea[type=message]:focus {
+      background-color: rgb(255, 255, 255);
+      
+    }
+
+    textarea[type=message] {
+      padding-left: 15px;
+      padding-right: 15px;
+
+    }  
 
     section form button {
       border-radius: 20px;
@@ -630,8 +687,85 @@ section .opening-video video:first-of-type {
       border-bottom: 2px solid #7A91A6;
     }
   
+    /* iPad */
+    
+    @media screen and (max-width: 1000px) {
+      section h1 {
+        font-size: 9vw;
+        padding-bottom: 9.5vw;
+      }
+    }
     
     /* Mobile */
+    
+    @media screen and (max-width: 600px) {
+      section h1 {
+        font-size: 12vw;
+        padding-bottom: 12.7vw;
+      }
+
+      header nav a img{
+        width: 200px;
+      }
+
+      .desktop-logo {
+        display: none;
+      }
+
+      .mobile-logo {
+        display: block;
+        width: 150px;
+      }
+
+      section:first-of-type {
+        min-height: 95vh;
+        max-height: 95vh;
+        margin-top: -20vw;
+        overflow-x: hidden;
+    }
+
+      header .menu-content {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      header .menu-btn a {
+        font-size: 6vw;
+      }
+
+      section:nth-of-type(3) {
+        flex-direction: column;
+        padding-top: 120px;
+      }
+
+      .text {
+        display: none;
+      }
+      
+      .horizontal-scroll {
+        flex-wrap: nowrap;
+        overflow-y: visible;
+        height: auto;
+        margin-bottom: 120px;
+      }
+
+      .horizontal-scroll div {
+        max-width: 100%;
+        margin: 30px 30px 0 30px;
+      }
+
+      section:nth-of-type(3) div button {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    
+    
+    
+    
+    
     
     
     @media screen and (max-height: 450px) {

@@ -28,9 +28,13 @@
                 <img src="/SK_Images/Menu_1.svg" alt="Open Menu">
             
             </div>
-            <a href="">
+            <a href="" class="desktop-logo">
                 <img src="./SK_Images/Studio Khonso Logo Reg Long White.svg" alt="Studio Khonsu Logo">
             </a>
+            <a href="" class="mobile-logo">
+                <img src="./SK_Images/Studio Khonsu Thin White.svg" alt="Studio Khonsu Logo">
+            </a>
+
             <div></div>
         </nav>
 
@@ -61,7 +65,7 @@
             <source src="SK_Images/Circle animation draft2.mp4">
         </video>
         </div>
-        <a class="down-link" href="#section-one" id="anchor1">VIEW SHOWREEL
+        <a class="down-link" href="#section-one" id="anchor1">VIEW IMAGE REEL
             <img src="/SK_Images/Arrow_3.svg" alt="Downward Arrow">
         </a>
     </section>
@@ -167,61 +171,83 @@
     <!-- Section 3 -->
 
     <section name="section-two" id="section-two">
-        <ul>
-            <li>ALL WORK</li>
-            <li>PHOTOGRAPHY</li>
-            <li>VIDEO</li>
-            <li>BRAND & STRATEGY</li>
-            <li>COPYWRITING</li>
-            <li>PRINT</li>
-        </ul>
-        <div class="horizontal-scroll">
-            <div>
+        <div>
+            <button class="active btn" id="all">ALL WORK</button>
+            <button class="btn" id="a">PHOTOGRAPHY</button>
+            <button class="btn" id="b">VIDEO</button>
+            <button class="btn" id="c">BRAND & STRATEGY</button>
+            <button class="btn" id="d">COPYWRITING</button>
+        </div>
+        
+        <!-- Horizonal Scroll with Selector -->
+
+        <div class="horizontal-scroll" id="ct">
+            
+            <div class="a">
                 <a href="">
                     <img src="/SK_Images/DJI_0095.jpeg" alt="">
                     <p>NECKER ISLAND<br>VIRGIN LIMITED EDITION</p>
                 </a>
+            </div>
+            
+            <div class="a">    
                 <a href="">
                     <img src="/SK_Images/_MG_4605-web.jpeg" alt="">
                     <p>TEQUILA, MEXICO<br>RELAIS & CHATEAUX</p>
                 </a>
             </div>
-            <div>
+
+            <div class="a">
                 <a href="">
                     <img src="/SK_Images/DJI_0744.jpeg" alt="">
                     <p>AMAZON RIVER<br>ICE AXE EXPERDITIONS</p>
                 </a>
+            </div>
+
+            <div class="a"> 
                 <a href="">
                     <img src="/SK_Images/S_M-109.jpeg" alt="">
                     <p>MOROCCO CHALLENGE<br>VIRGIN STRIVE</p>
                 </a>
             </div>
-            <div>
+
+            <div class="a">
                 <a href="">
                     <img src="/SK_Images/_MG_5094.jpeg" alt="">
                     <p>SRI LANKA TEA FIELDS<br>ENGLISH TEA SHOP</p>
                 </a>
+            </div>
+            
+            <div class="a">
                 <a href="">
                     <img src="/SK_Images/WEB-1.jpeg" alt="">
                     <p>TSAVO, KENYA<br>FINCH HATTONS</p>
                 </a>
             </div>
-            <div>
-            <a href="">
-                <img src="/SK_Images/_MG_5269.jpeg" alt="">
-                <p>GREENLAND<br>THE WATERMAN PROJECT</p>
-            </a>
-            <a href="">
-                <img src="/SK_Images/ANDROS_ISLAND_SHG-50.jpeg" alt="">
-                <p>ANDROS ISLAND, BAHAMAS<br>SAVING THE BLUE</p>
-            </a>
+
+            <div class="b">
+                <a href="">
+                    <img src="/SK_Images/_MG_5269.jpeg" alt="">
+                    <p>GREENLAND<br>THE WATERMAN PROJECT</p>
+                </a>
             </div>
-            <div>
-            <a href="">
-                <img src="/SK_Images/_MG_2436.jpeg" alt="">
-                <p>THE ALPS, EUROPE<br>VIRGIN STRIVE</p>
-            </a>
-            <a href="">
+            
+            <div class="a">
+                <a href="">
+                    <img src="/SK_Images/ANDROS_ISLAND_SHG-50.jpeg" alt="">
+                    <p>ANDROS ISLAND, BAHAMAS<br>SAVING THE BLUE</p>
+                </a>
+            </div>
+
+            <div class="a">
+                <a href="">
+                    <img src="/SK_Images/_MG_2436.jpeg" alt="">
+                    <p>THE ALPS, EUROPE<br>VIRGIN STRIVE</p>
+                </a>
+            </div>
+
+            <div class="a">
+                <a href="">
                 <img src="/SK_Images/DJI_0095.jpeg" alt="">
                 <p>SELECTED WILDLIFE<br>VARIOUS</p>
             </a>
@@ -350,7 +376,7 @@
                             <input type="email" name="_replyto" placeholder="EMAIL">
                         </label>
                         <label>
-                            <textarea name="message" placeholder="MESSAGE"></textarea>
+                            <textarea type="message" name="message" placeholder="MESSAGE"></textarea>
                         </label>
                         <label>
                             <input type="text" placeholder="LOCATION">
@@ -373,6 +399,8 @@
 
     </section>
     <script src="./jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./selector.js"></script>
     <script src="./scroll.js"></script>
     <script src="./slideshow.js"></script>
     <script src="./menu.js"></script>
