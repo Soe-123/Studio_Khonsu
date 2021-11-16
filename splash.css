@@ -43,6 +43,7 @@ header nav div:last-of-type {
 
 header nav div:first-of-type {
   width: 62px;
+  margin-top: 20%;
 }
 
 header .menu-btn {
@@ -200,7 +201,7 @@ transition: opacity 300ms ease-out;
 @keyframes fade {
   from {opacity: .2}
   to {opacity: 1}
-} */ */
+} */ 
 
 /* Media Queries */
 
