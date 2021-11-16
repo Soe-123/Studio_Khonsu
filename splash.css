@@ -89,7 +89,7 @@ header .menu-content div:first-of-type {
 header .menu-content h2 {
   font-weight: normal;
   font-size: 20px;
-  margin: 120px 0;
+  margin: 60px 0;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -212,7 +212,6 @@ transition: opacity 300ms ease-out;
 
   header .menu-content div:first-of-type {
     width: 250px;
-    margin-top: 20%;
   }
 
   header nav div:last-of-type img{
@@ -228,7 +227,7 @@ transition: opacity 300ms ease-out;
   }
 
   header .menu-content h2 {
-    margin: 80px 0;
+    margin: 60px 0;
     font-size: 22px;
   }
 
