@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Caslon Doric';
-    src: url('./SK_Fonts/CaslonDoric-Regular.woff2') format('woff2'),
-        url('./SK_Fonts/CaslonDoric-Regular.woff') format('woff');
+    src: url('./SK_Fonts/CaslonDoric-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

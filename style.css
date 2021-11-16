@@ -281,21 +281,17 @@ section .opening-video video:first-of-type {
     
     /* Fading animation */
     .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
+      opacity: 1;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      -ms-transition: opacity 1s ease-in-out;    
+      transition: opacity 1s ease-in-out;
     }
+
     
-    @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
+
     
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
 
     .horizontal-scroll {
       display: flex;
@@ -321,6 +317,7 @@ section .opening-video video:first-of-type {
 
     .horizontal-scroll p {
       margin: 20px 0 0 0;
+      color: #2D44729B;
     }
 
     section:nth-of-type(3) {
