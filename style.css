@@ -331,6 +331,11 @@ section .opening-video video:first-of-type {
       align-items: center;
     }
 
+    section:nth-of-type(3) .horizontal-btn {
+      display: flex;
+      flex-direction: column;
+    }
+
     section:nth-of-type(3) div button {
       font-family: 'Caslon Doric';
       color: #2D44729B;
@@ -405,14 +410,16 @@ section .opening-video video:first-of-type {
       width: 100%;
     }
 
-    section:nth-of-type(5) {
+    .pseudo-section:first-of-type {
       background-image: url("/SK_Images/Travel\ website\ 06.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center; 
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;   
+      align-items: center;
+      min-height: 100vh;   
     }
 
     section .index-wrapper {
@@ -470,14 +477,14 @@ section .opening-video video:first-of-type {
       justify-content: space-between;
     }
 
-    section:nth-of-type(5) h3 {
+    .pseudo-section:first-of-type h3 {
       font-family: 'Caslon Doric';
       font-weight: 300;
       color: #90A3B4;
       letter-spacing: 1.1px; 
     }
 
-   section p {
+    .pseudo-section .index-wrapper p {
       font-family: 'Caslon Doric';
       font-weight: 300;
       color: rgba(0,0,0, 1);
@@ -486,44 +493,57 @@ section .opening-video video:first-of-type {
       margin-top: 60px;
     }
 
-    section:nth-of-type(6) {
+    .pseudo-section:nth-of-type(2) {
       background-image: url("/SK_Images/Travel\ website\ 07.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center; 
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;   
+      align-items: center;
+      min-height: 100vh;   
+   
     }
 
-    section:nth-of-type(6) p {
+    .pseudo-section:nth-of-type(2) p {
       color: white;
     }
 
 
-    section:nth-of-type(7) {
+    .pseudo-section:nth-of-type(3) {
       background-image: url("/SK_Images/Travel\ website\ 06.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center; 
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;   
+      align-items: center;
+      min-height: 100vh;   
     }
 
-    section:nth-of-type(8) {
+    section:nth-of-type(5)  .down-link{
+      color: black;
+    }
+
+    /* Contact Section */
+
+
+    section:last-of-type  {
       display: flex;
       flex-direction: row;
     }
 
-    section:nth-of-type(8) 
-
-    .half-page img {
-        min-height: 100vh;
+    section:last-of-type img {
         object-fit: cover;
     }
 
-    section .half-page {
+    .contact-img {
+      min-height: 100vh;
+    }
+
+    section:last-of-type .half-page {
       width: 50%;
       font-family: 'Caslon Doric';
       font-weight: 300;
@@ -535,30 +555,37 @@ section .opening-video video:first-of-type {
       padding: 30px;
     }
 
-    section .half-page:last-of-type {
+    section:last-of-type .half-page:last-of-type {
       padding: 0;
     }
 
-    section .half-page p, a {
+    section:last-of-type .half-page p, a {
       color: white;
       letter-spacing: 0.4px;
       line-height: 1.4;
       text-decoration: none;
     }
 
-    section .half-page:first-of-type {
+    section:last-of-type .half-page:first-of-type {
       background-image: url("/SK_Images/Travel\ website\ 05.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       flex-direction: column;
       overflow: scroll;
+      display: flex;
+      padding-top: 300px;
     }
 
-    section .half-page div:first-of-type{
-      height: 40px;
+    section:last-of-type .half-page div:first-of-type{
+      width: 50%;
+      margin-bottom: 100px;
     }
 
-    section form {
+    section:last-of-type .half-page div:first-of-type img{
+      width: 100%;
+    }
+
+    section:last-of-type form {
       display: flex;
       width: 100%;
       flex-direction: row;
@@ -566,12 +593,12 @@ section .opening-video video:first-of-type {
       justify-content: space-between;
     }
 
-    section form label {  
+    section:last-of-type form label {  
       display: block;
       flex-basis: 100%;
     }
 
-    section form label input, textarea {
+    section:last-of-type form label input, textarea {
       width: 100%;
       height: 65px;
       border-radius: 0;
@@ -582,11 +609,11 @@ section .opening-video video:first-of-type {
       padding-top: 25px;
     }
 
-    section form label input {
+    section:last-of-type form label input {
       padding-top: 0px;
     }
 
-    section form label:nth-of-type(4), label:nth-of-type(5) {
+    section:last-of-type form label:nth-of-type(4), section:last-of-type label:nth-of-type(5) {
       flex-basis: calc(50% - 10px);
     }
 
@@ -621,19 +648,16 @@ section .opening-video video:first-of-type {
       text-align: center;
     }  
 
-
     textarea[type=message]:focus {
       background-color: rgb(255, 255, 255);
-      
     }
 
     textarea[type=message] {
       padding-left: 15px;
       padding-right: 15px;
-
     }  
 
-    section form button {
+    section:last-of-type  form button {
       border-radius: 20px;
       width: 174px;
       margin: 0 auto;
@@ -649,8 +673,8 @@ section .opening-video video:first-of-type {
       text-align: left;
       font-size: 13px;
       text-align: center;
-
     }
+    
     ::-moz-placeholder { /* Firefox 19+ */
       color: rgb(255, 255, 255);
       margin: 0;
@@ -660,6 +684,7 @@ section .opening-video video:first-of-type {
       position: absolute;
       text-align: center;
     }
+    
     :-ms-input-placeholder { /* IE 10+ */
       color: rgb(255, 255, 255);
       margin: 0;
@@ -668,6 +693,7 @@ section .opening-video video:first-of-type {
       font-size: 13px;
       text-align: center;
     }
+    
     :-moz-placeholder { /* Firefox 18- */
       color: rgb(255, 255, 255);
       margin: 0;
@@ -677,7 +703,7 @@ section .opening-video video:first-of-type {
       text-align: center;
     }
 
-    section .half-page p {
+    section:last-of-type .half-page p {
       flex-basis: content;
     }
 
@@ -699,13 +725,26 @@ section .opening-video video:first-of-type {
     /* Mobile */
     
     @media screen and (max-width: 600px) {
+      
+      body {
+        overflow-y:hidden;
+      }
+      
       section h1 {
         font-size: 12vw;
         padding-bottom: 12.7vw;
       }
 
+      header {
+        padding: 15px;
+      }
+
       header nav a img{
         width: 200px;
+      }
+
+      header nav div:first-of-type {
+        padding-top: 10px;
       }
 
       .desktop-logo {
@@ -722,7 +761,8 @@ section .opening-video video:first-of-type {
         max-height: 95vh;
         margin-top: -20vw;
         overflow-x: hidden;
-    }
+        overflow-y: hidden;
+      }
 
       header .menu-content {
         flex-direction: column;
@@ -733,32 +773,142 @@ section .opening-video video:first-of-type {
         font-size: 6vw;
       }
 
-      section:nth-of-type(3) {
-        flex-direction: column;
-        padding-top: 120px;
+      section:nth-of-type(2) {
+        min-height: 85vh;
+        max-height: 85vh;
       }
 
       .text {
         display: none;
       }
-      
+
+      section:nth-of-type(3) {
+        flex-direction: column;
+        padding-top: 80px;
+        overflow-y: scroll;
+        min-height: 85vh;
+        max-height: 85vh;
+        background-image: none;
+        background-color: white;
+      }
+
       .horizontal-scroll {
         flex-wrap: nowrap;
         overflow-y: visible;
         height: auto;
         margin-bottom: 120px;
+        margin-top: 10px;
       }
 
       .horizontal-scroll div {
         max-width: 100%;
-        margin: 30px 30px 0 30px;
+        margin: 10px 30px 0 30px;
+      }
+      
+      .horizontal-scroll p {
+        margin-top: 10px;
+      }
+
+      section .horizontal-btn {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
       }
 
       section:nth-of-type(3) div button {
         text-align: center;
-        display: block;
         width: 100%;
-        margin-left: 0;
+        margin: 0;
+      }
+
+      section:nth-of-type(4) {
+        min-height: 85vh;
+        max-height: 85vh;
+      }
+
+      section:nth-of-type(5) {
+        padding: 120px 0px 0 0px;
+        background-image: none;
+        background-color: white;
+        overflow-y: scroll;
+        min-height: 85vh;
+        max-height: 85vh;
+      }
+
+      section:nth-of-type(5) .down-link{
+        position: relative;
+        display: block;
+      }
+
+      section .index-wrapper div img {
+        width: 50%;
+      }
+
+      .pseudo-section:first-of-type h3 {
+        margin: 0 0 10px 0 ;
+      }
+
+      .pseudo-section .index-wrapper p {
+        margin-top: 10px;
+      }
+
+      .pseudo-section:first-of-type {
+        min-height: auto;
+        padding-bottom: 30px;
+      }
+
+      .index-wrapper {
+        width: calc(100% - 60px)
+      }
+
+      section .index-wrapper div {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      section h4{
+        font-size: 4vw
+      }
+
+      section p {
+        margin-top: 10px;
+      }
+
+      .pseudo-section:nth-of-type(2) {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 30px;
+      }
+
+      .pseudo-section:nth-of-type(2) h4 {
+        margin-bottom: 30px;
+      }
+
+      .pseudo-section:nth-of-type(3) {
+        background-image: none;
+        background-color: white;
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 60px;
+      }
+
+      .pseudo-section:nth-of-type(3) h4 {
+      font-size: 6.6vw;
+      
+      }
+
+      section:last-of-type .half-page:last-of-type {
+      display: none;
+      }
+
+      section:last-of-type .half-page {
+        width: 100%;
+      }
+
+      section:last-of-type .half-page div:first-of-type {
+        display: none;
       }
     }
     
