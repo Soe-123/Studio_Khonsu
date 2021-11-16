@@ -80,6 +80,7 @@ header .menu-content {
   z-index: 1;
   color: white;
   letter-spacing: 0.5px;
+  overflow: hidden;
 }
 
 header .menu-content div:first-of-type {
@@ -223,7 +224,6 @@ transition: opacity 300ms ease-out;
   }
 
   h1 {
-    margin-bottom: 20px;
   }
 
   header .menu-content h2 {
