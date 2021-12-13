@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Caslon Doric';
-    src: url('./SK_Fonts/CaslonDoric-Regular.woff2') format('woff2');
+    src: url('./SK_Fonts/CaslonDoric-Regular-Web.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -238,5 +238,7 @@ transition: opacity 300ms ease-out;
   header .menu-content div:last-of-type {
     margin-top: 10px;
   } 
+
+  
 
 }

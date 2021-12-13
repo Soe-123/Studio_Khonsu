@@ -18,6 +18,15 @@
 
 @font-face {
   font-family: 'Caslon Doric';
+  src: url('./SK_Fonts/CaslonDoric-Thin.woff2') format('woff2'),
+      url('./SK_Fonts/CaslonDoric-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Caslon Doric';
   src: url('./SK_Fonts/CaslonDoric-Regular.woff2') format('woff2'),
       url('./SK_Fonts/CaslonDoric-Regular.woff') format('woff');
   font-weight: normal;
@@ -136,7 +145,6 @@ header .menu-btn .closebtn img {
 }
 
 section {
-    min-height: 100vh;
     position:relative;
 }
 
@@ -148,40 +156,35 @@ section h1 {
     align-items: center;
     height: 100vh;
     width: 100%;
-    padding-bottom: 6.7vw;
     font-family: 'Caslon Doric';
-    font-weight: 300;
+    font-weight: 100;
     font-size: 6vw;
     color: white;
     text-align: center;
+    margin: 0;
 }
 
-section .opening-video {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.opening-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-section .opening-video video:first-of-type {
-    object-fit:contain;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  section .opening-video video:nth-of-type(2) {
-    object-fit:cover;
-    width: 100vw;
-    height: 100vh;
-    
-  }
-
-  section .opening-video video:last-of-type {
-    object-fit:contain;
-    width: 100vw;
-    height: 100vh;
-    
-  }
 
   section .down-link {
       position: absolute;
@@ -485,7 +488,7 @@ section .opening-video video:first-of-type {
       font-family: 'Caslon Doric';
       font-weight: 300;
       color: rgba(0,0,0, 1);
-      letter-spacing: 0.4px; 
+      letter-spacing: 0.6px; 
       flex-basis: 48%;
       margin-top: 60px;
     }
@@ -518,6 +521,10 @@ section .opening-video video:first-of-type {
       justify-content: center;
       align-items: center;
       min-height: 100vh;   
+    }
+
+    section:nth-of-type(5) {
+    height: 300vh !important;
     }
 
     section:nth-of-type(5)  .down-link{
@@ -570,7 +577,7 @@ section .opening-video video:first-of-type {
       flex-direction: column;
       overflow: scroll;
       display: flex;
-      padding-top: 300px;
+      padding-top: 0px;
     }
 
     section:last-of-type .half-page div:first-of-type{
@@ -754,12 +761,10 @@ section .opening-video video:first-of-type {
       }
 
       section:first-of-type {
-        min-height: 95vh;
-        max-height: 95vh;
-        margin-top: -20vw;
         overflow-x: hidden;
         overflow-y: hidden;
       }
+
 
       header .menu-content {
         flex-direction: column;
@@ -771,8 +776,7 @@ section .opening-video video:first-of-type {
       }
 
       section:nth-of-type(2) {
-        min-height: 85vh;
-        max-height: 85vh;
+       
       }
 
       .text {
@@ -783,8 +787,6 @@ section .opening-video video:first-of-type {
         flex-direction: column;
         padding-top: 80px;
         overflow-y: scroll;
-        min-height: 85vh;
-        max-height: 85vh;
         background-image: none;
         background-color: white;
       }
@@ -821,8 +823,7 @@ section .opening-video video:first-of-type {
       }
 
       section:nth-of-type(4) {
-        min-height: 85vh;
-        max-height: 85vh;
+        
       }
 
       section:nth-of-type(5) {
@@ -830,8 +831,6 @@ section .opening-video video:first-of-type {
         background-image: none;
         background-color: white;
         overflow-y: scroll;
-        min-height: 85vh;
-        max-height: 85vh;
       }
 
       section:nth-of-type(5) .down-link{
@@ -840,7 +839,7 @@ section .opening-video video:first-of-type {
       }
 
       section .index-wrapper div img {
-        width: 50%;
+        width: 70vw;
       }
 
       .pseudo-section:first-of-type h3 {
@@ -865,8 +864,9 @@ section .opening-video video:first-of-type {
         overflow-y: scroll;
       }
 
-      section h4{
-        font-size: 4vw
+      section h4 {
+        font-size: 7vw;
+        font-weight: 300;
       }
 
       section p {
@@ -907,6 +907,21 @@ section .opening-video video:first-of-type {
       section:last-of-type .half-page div:first-of-type {
         display: none;
       }
+
+
+      .prev, .next {
+        top: 42%;
+      }
+
+      section .down-link {
+        font-family: 'Caslon Doric';
+        font-weight: 400;
+      }
+
+      section:last-of-type .half-page:first-of-type {
+        padding-top: 20%;
+      }  
+      
     }
     
     
@@ -923,4 +938,5 @@ section .opening-video video:first-of-type {
       top: 15px;
       right: 35px;
       }
+
     }
