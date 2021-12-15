@@ -1,0 +1,185 @@
+header {
+    position: fixed; /* Make it stick/fixed */
+    top: 0px; /* Stay on top */
+    width: 100%; /* Full width */
+    z-index: 5;
+    padding: 25px 25px 15px 25px;
+    background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+}
+
+header nav a {
+    font-family: 'Caslon Doric';
+    font-weight: 300px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.desktop-logo {
+    display: block;
+}
+
+.desktop-logo img {
+    width: 250px;
+    position: relative;
+    z-index: 30;
+}
+
+.mobile-logo {
+    display: none;
+  }
+
+header nav div img{
+  width: 60px;
+}
+
+header nav div:nth-of-type(2) {
+  width: 60px;
+}
+
+
+header .menu-btn {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    /* transition: 0.5s; */
+}
+
+header .menu-content {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 100%;; 
+  font-family: 'Caslon Doric';
+  font-weight: 300;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  z-index: 15;
+}
+
+header .menu-links {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 100%;; 
+  font-family: 'Caslon Doric';
+  font-weight: 300;
+  width: 100%;
+  height: 100vh;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+position: relative;
+}
+
+.background-color {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+header .menu-btn a {
+  text-decoration: none;
+  font-size: 2.5vw;
+  color: #ffffff;
+  display: block;
+  transition: 0;
+}
+
+header a {
+opacity: 1;
+animation-name: fadeInOpacity;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+header .menu-btn a:hover, .menu-btn a:focus {
+  color: #f1f1f1;
+}
+
+header .menu-btn .closebtn img {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 60px;
+  z-index: 40;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 15px;
+      }
+
+      header nav a img{
+        width: 150px;
+      }
+
+      header nav div:first-of-type {
+        padding-top: 10px;
+      }
+
+      .desktop-logo {
+        display: none;
+      }
+
+      .mobile-logo {
+        display: block;
+        width: 150px;
+      }
+
+      header .menu-content {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      header .menu-btn a {
+        font-size: 6vw;
+        margin: 10px 0;
+      }
+
+      header .menu-links {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+
+}

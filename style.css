@@ -48,102 +48,6 @@ img {
     height: auto;
   }
 
-header {
-    position: fixed; /* Make it stick/fixed */
-    top: 0px; /* Stay on top */
-    width: 100%; /* Full width */
-    z-index: 5;
-    padding: 30px
-}
-
-header nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-content: space-between;
-}
-
-header nav a {
-    font-family: 'Caslon Doric';
-    font-weight: 300px;
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    margin: 0 auto;
-}
-
-.desktop-logo {
-  display: block;
-}
-
-.desktop-logo img {
-  width: 250px;
-  position: relative;
-  z-index: 30;
-}
-
-.mobile-logo {
-  display: none;
-}
-
-header nav div img{
-  width: 60px;
-}
-
-header nav div:nth-of-type(2) {
-  width: 60px;
-}
-
-
-header .menu-btn {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-header .menu-content {
-  background-image: url("/SK_Images/Travel\ website\ 05.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Caslon Doric';
-  font-weight: 300;
-  width: 100%;
-  height: 100vh;
-  padding: 0 10%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-
-}
-
-header .menu-btn a {
-  text-decoration: none;
-  font-size: 2.5vw;
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
-}
-
-header .menu-btn a:hover, .menu-btn a:focus {
-  color: #f1f1f1;
-}
-
-header .menu-btn .closebtn img {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  width: 60px;
-}
-
 section {
     position:relative;
 }
@@ -173,22 +77,25 @@ section h1 {
   z-index: -1;
   pointer-events: none;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 iframe {
   width: 100vw;
   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
   min-height: 100vh;
   min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  object-fit: fill;
+  transform: scale(1.15);
 }
 
 
   section .down-link {
       position: absolute;
-      z-index: 10;
+      z-index: 2;
       bottom: 30px;
       color: white;
       font-size: 20px;
@@ -215,7 +122,13 @@ iframe {
     
     /* Hide the images by default */
     .mySlides {
-      display: none;
+      opacity: 0;
+      transition: opacity 0.25s;
+      position: absolute;
+    }
+
+    .mySlides.active {
+      opacity: 1;
     }
 
     .mySlides img {
@@ -266,10 +179,13 @@ iframe {
       font-weight: 300;
       font-size: 20px;
       left: 30px;
-      position: absolute;
-      bottom: 30px;
+      position: sticky;
+      bottom: 60px;
       width: 100%;
       text-align: left;
+      padding-left: 36px;
+      padding-top: 15px;
+      line-height: 0.7
     }
     
     /* Number text (1/3 etc)
@@ -283,18 +199,14 @@ iframe {
     */
     
     /* Fading animation */
-    .fade {
+    /* .fade {
       opacity: 1;
       -webkit-transition: opacity 1s ease-in-out;
       -moz-transition: opacity 1s ease-in-out;
       -o-transition: opacity 1s ease-in-out;
       -ms-transition: opacity 1s ease-in-out;    
       transition: opacity 1s ease-in-out;
-    }
-
-    
-
-    
+    } */
 
     .horizontal-scroll {
       display: flex;
@@ -321,6 +233,10 @@ iframe {
     .horizontal-scroll p {
       margin: 20px 0 0 0;
       color: #2D44729B;
+    }
+
+    .horizontal-scroll p:hover {
+      color: #0000009b;
     }
 
     section:nth-of-type(3) {
@@ -524,7 +440,7 @@ iframe {
     }
 
     section:nth-of-type(5) {
-    height: 300vh !important;
+    /* height: 300vh !important; */
     }
 
     section:nth-of-type(5)  .down-link{
@@ -556,7 +472,11 @@ iframe {
       text-align: center;
       align-items: center;
       justify-content: center;
-      padding: 30px;
+      padding: 5%;
+    }
+
+    .contact p{
+      max-width: 500px;
     }
 
     section:last-of-type .half-page:last-of-type {
@@ -739,40 +659,9 @@ iframe {
         padding-bottom: 12.7vw;
       }
 
-      header {
-        padding: 15px;
-      }
-
-      header nav a img{
-        width: 200px;
-      }
-
-      header nav div:first-of-type {
-        padding-top: 10px;
-      }
-
-      .desktop-logo {
-        display: none;
-      }
-
-      .mobile-logo {
-        display: block;
-        width: 150px;
-      }
-
       section:first-of-type {
         overflow-x: hidden;
         overflow-y: hidden;
-      }
-
-
-      header .menu-content {
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      header .menu-btn a {
-        font-size: 6vw;
       }
 
       section:nth-of-type(2) {
@@ -785,7 +674,7 @@ iframe {
 
       section:nth-of-type(3) {
         flex-direction: column;
-        padding-top: 80px;
+        padding-top: 100px;
         overflow-y: scroll;
         background-image: none;
         background-color: white;
