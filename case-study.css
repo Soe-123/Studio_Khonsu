@@ -42,6 +42,10 @@ img {
   max-width: 100%;
 }
 
+body {
+  background-color: rgb(8, 5, 53);
+}
+
 section .opening-block {
     height: 100vh;
     width: 100vw;
@@ -63,6 +67,14 @@ section .opening-block {
 
 .andros {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068750/Bahamas%20LR/DJI_0063_tibrf8.jpg");
+}
+
+.morocco {
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068856/Morocco%20LR/S_M-30_ogxcex.jpg");
+}
+
+.greenland {
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068811/Greenland%20LR/DJI_0424_b706qb.jpg");
 }
 
 .tea {
