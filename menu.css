@@ -4,7 +4,27 @@ header {
     width: 100%; /* Full width */
     z-index: 5;
     padding: 25px 25px 15px 25px;
-    background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+    background: linear-gradient(to bottom, black, cubic-bezier(0.48, 0.3, 0.64, 1), transparent);
+  /* => */
+  background: linear-gradient(
+    to bottom,
+    hsl(0, 0%, 0%),
+    hsla(0, 0%, 0%, 0.94505) 7.9%,
+    hsla(0, 0%, 0%, 0.88294) 15.3%,
+    hsla(0, 0%, 0%, 0.81522) 22.2%,
+    hsla(0, 0%, 0%, 0.7426) 28.7%,
+    hsla(0, 0%, 0%, 0.66692) 34.8%,
+    hsla(0, 0%, 0%, 0.58891) 40.6%,
+    hsla(0, 0%, 0%, 0.50925) 46.2%,
+    hsla(0, 0%, 0%, 0.42866) 51.7%,
+    hsla(0, 0%, 0%, 0.34817) 57.2%,
+    hsla(0, 0%, 0%, 0.2693) 62.8%,
+    hsla(0, 0%, 0%, 0.19309) 68.7%,
+    hsla(0, 0%, 0%, 0.12126) 75.2%,
+    hsla(0, 0%, 0%, 0.05882) 82.6%,
+    hsla(0, 0%, 0%, 0.01457) 91.2%,
+    hsla(0, 0%, 0%, 0)
+  );
 }
 
 header nav {
@@ -59,24 +79,43 @@ header .menu-btn {
     /* transition: 0.5s; */
 }
 
+header .background-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 113%;
+  min-height: 105%;
+}
+
 header .menu-content {
   background-image: url("");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fill;
   background-position: center;
   opacity: 100%;; 
   font-family: 'Caslon Doric';
   font-weight: 300;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
   position: relative;
   z-index: 15;
+}
+
+header .menu-content p {
+  position: absolute;
+      z-index: 2;
+      bottom: 30px;
+      color: white;
+      font-size: 20px;
+      width: 100%;
+      font-family: 'Caslon Doric';
+      font-weight: 300;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 3px; 
 }
 
 header .menu-links {
@@ -85,14 +124,14 @@ header .menu-links {
   background-position: center;
   opacity: 100%;; 
   font-family: 'Caslon Doric';
-  font-weight: 300;
+  font-weight: 100;
   width: 100%;
   height: 100vh;
   padding: 0 10%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
 position: relative;
 }
@@ -102,15 +141,18 @@ position: relative;
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 header .menu-btn a {
   text-decoration: none;
-  font-size: 2.5vw;
+  font-size: 2vw;
   color: #ffffff;
   display: block;
   transition: 0;
+  letter-spacing: 3px; 
+  margin: 0 25px;
+  text-align: center;
 }
 
 header a {
@@ -181,5 +223,7 @@ header .menu-btn .closebtn img {
         justify-content: center;
       }
 
-
+      header .menu-content p {
+        display: none;
+      }
 }

@@ -50,19 +50,19 @@ section .opening-block {
 }
 
 .necker {
-  background-image: url("https://res.cloudinary.com/dtmlnugky/image/upload/v1639068903/Necker%20island%20LR/DJI_0710_k6ooqk.jpg");
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068903/Necker%20island%20LR/DJI_0710_k6ooqk.jpg");
 }
 
 .tequila {
-  background-image: url("https://res.cloudinary.com/dtmlnugky/image/upload/v1639068843/Mexico%20LR/DJI_0747-web_jayvj7.jpg");
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068843/Mexico%20LR/DJI_0747-web_jayvj7.jpg");
 }
 
 .amazon {
-  background-image: url("https://res.cloudinary.com/dtmlnugky/image/upload/v1639068718/Amazon%20LR/DJI_0744_m3x2ew.jpg");
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068718/Amazon%20LR/DJI_0744_m3x2ew.jpg");
 }
 
 .tea {
-  background-image: url("https://res.cloudinary.com/dtmlnugky/image/upload/v1639502871/Overview/GettyImages-1289868586-1_kg1emt.jpg");
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/q_50/v1639502871/Overview/GettyImages-1289868586-1_kg1emt.jpg");
 }
 
 section .down-link {
@@ -105,10 +105,10 @@ section .opening-block h1 {
 section h3 {
     font-family: 'caslon Doric';
     font-size: 16px;
-    font-weight: 300;
+    font-weight: normal;
     padding-top: 120px;
     margin-bottom: 16px;
-    letter-spacing: 0.6px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 
 }
@@ -119,6 +119,7 @@ section h2 {
     font-weight: 100;
     margin-top: 0;
     margin-bottom: 16px;
+    letter-spacing: 2px;
 }
 
 section h4 {
@@ -128,7 +129,7 @@ section h4 {
     margin-top: 0;
     margin-bottom: 80px;
     color: #7A91A5;
-    letter-spacing: 0.6px;
+    letter-spacing: 2px;
 }
 
 section h6 {
@@ -166,6 +167,7 @@ section .three-column p {
     color: #707070;
     flex-basis: 30%;
     letter-spacing: 0.6px; 
+    line-height: 1.4;
 }
 
 section .small-line img{
@@ -174,11 +176,10 @@ section .small-line img{
 }
 
 section .photo-slider-block {
-    height: 85vh;
     width: 100vw;
     background-color: black;
-    padding-left: 23%;
-    overflow: hidden;
+    display: block;
+    border-bottom: 18px solid black;
 }
 
   h5 {
@@ -198,10 +199,10 @@ section .photo-slider-block {
   }
 
   section .photo-slider-block-2 {
-    height: 43.3vw;
+    height: 45vw;
     width: 100vw;
     background-color: black;
-    padding-left: 23%;
+    padding-left: 33%;
     overflow: hidden;
     position: relative;
 
@@ -264,8 +265,11 @@ footer {
   }
 
   footer a {
+    color: black;
     text-decoration: none;
   }
+
+
 
   footer a:hover {
     text-decoration: 1px underline;
@@ -280,7 +284,7 @@ footer {
   @media screen and (max-width: 600px) {
    
       section .opening-block h1 {
-      font-size: 16vw;
+      font-size: 12vw;
     }
 
     section h2 {
@@ -289,8 +293,8 @@ footer {
 
     section .grid-wrapper {
       width: 100%;
-      padding-right: 40px;
-      padding-left: 40px;
+      padding-right: 30px;
+      padding-left: 30px;
     }
 
     section h3 {
@@ -303,6 +307,7 @@ footer {
       font-size: 13px;
       font-weight: normal;
       margin-bottom: 35px;
+      line-height: 1.4;
 
     }
 
@@ -317,7 +322,7 @@ footer {
     }
 
     section .photo-slider-block {
-      height: 60vw;
+      height: 66vw;
       padding-left: 0px;
     }
 
@@ -354,7 +359,7 @@ footer {
     }
 
     .prev, .next {
-      top: 30vw;
+      top: 0vw;
     }
 
     h5 {
