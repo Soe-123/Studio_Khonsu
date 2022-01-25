@@ -61,6 +61,10 @@ section .opening-block {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068718/Amazon%20LR/DJI_0744_m3x2ew.jpg");
 }
 
+.bahamas {
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068750/Bahamas%20LR/DJI_0063_tibrf8.jpg");
+}
+
 .tea {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/q_50/v1639502871/Overview/GettyImages-1289868586-1_kg1emt.jpg");
 }
