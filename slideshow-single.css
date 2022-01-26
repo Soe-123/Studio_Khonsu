@@ -90,6 +90,59 @@
   max-height: 44vw;
 }
 
+.mySlides3 {
+  opacity: 0;
+  transition: opacity 0.25s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: top;
+  justify-content: right;
+  margin: 0 0 0 auto;
+  height: 48vw;
+  
+}
+
+.mySlides3.active {
+  opacity: 1;
+}
+
+
+.mySlides3 img {
+  object-fit: contain;
+  object-position: 50% 50%;
+  margin: 0 0 0 auto;
+  display: block;
+  max-height: 44vw;
+}
+
+.mySlides4 img {
+  object-fit: contain;
+  object-position: 50% 50%;
+  margin: 0 0 0 auto;
+  display: block;
+  max-height: 44vw;
+}
+
+.mySlides4 {
+  opacity: 0;
+  transition: opacity 0.25s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: top;
+  justify-content: right;
+  margin: 0 0 0 auto;
+  height: 48vw;
+  
+}
+
+.mySlides4.active {
+  opacity: 1;
+}
+
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
