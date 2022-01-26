@@ -86,6 +86,7 @@ header .background-image {
   transform: translate(-50%, -50%);
   min-width: 113%;
   min-height: 105%;
+  object-fit: cover;
 }
 
 header .menu-content {
