@@ -69,6 +69,10 @@ section .opening-block {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068750/Bahamas%20LR/DJI_0063_tibrf8.jpg");
 }
 
+.finch {
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068778/Finch%20Hattons%20LR/FH_WEB_USAGE_sRGB-138_vjwi2y.jpg");
+}
+
 .morocco {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068856/Morocco%20LR/S_M-30_ogxcex.jpg");
 }
