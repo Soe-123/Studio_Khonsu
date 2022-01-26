@@ -81,6 +81,10 @@ section .opening-block {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068811/Greenland%20LR/DJI_0424_b706qb.jpg");
 }
 
+.wildlife {
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068636/African%20Wildlife%20LR/_MG_9122_uuwsf0.jpg");
+}
+
 .tea {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/q_50/v1639502871/Overview/GettyImages-1289868586-1_kg1emt.jpg");
 }
