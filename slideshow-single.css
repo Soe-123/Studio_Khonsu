@@ -206,6 +206,22 @@
     background-color: black;
   }
 
+  .numbertext-blue {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 0px 36px 0px 12px;
+    position: relative;
+    bottom: -2vw;
+    right: 0px;
+    font-family: 'caslon Doric';
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.6px; 
+    text-align: right;
+    width: 100vw;
+    background-color: #7A91A6;
+  }
+
   @media screen and (max-width: 600px) {
 
     .mySlides img {

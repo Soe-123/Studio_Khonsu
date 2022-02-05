@@ -228,6 +228,12 @@ section .photo-slider-block {
     display: block;
 }
 
+section .photo-slider-block-blue {
+  width: 100vw;
+  background-color: #7A91A6;
+  display: block;
+}
+
   iframe {
     
     position: absolute;
