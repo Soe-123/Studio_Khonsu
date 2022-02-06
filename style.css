@@ -68,6 +68,8 @@ body {
       overflow-x: hidden;
       height: 100%;
       overflow-y:hidden;
+      touch-action:none;
+
 }
 
 
@@ -315,6 +317,24 @@ section .background-image {
     .down-link.two {
     color: black;
     }
+
+    .mobile-about-link {
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      width: 100%;
+      font-family: 'Caslon Doric';
+      font-weight: 300;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 3px; 
+      width: 100%;
+      display: none;
+  }
+
+  .mobile-about-link img {
+    width: 40px;
+    margin: 10px auto 0 auto;
+  }
 
     /* Main menu */
 
@@ -784,7 +804,7 @@ section .background-image {
         flex-wrap: nowrap;
         overflow-y: visible;
         height: auto;
-        margin-bottom: 120px;
+        margin-bottom: 00px;
         margin-top: 10px;
         padding-right: 0;
         justify-content: start;
@@ -866,8 +886,16 @@ section .background-image {
       .gradient-border {
         background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(255, 255, 255));
         background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(255, 255, 255));
-
       }
+
+      .down-link.two {
+        display: none;
+      }
+
+      .mobile-about-link {
+        display: block;
+      }
+      
 
       .scroll-wrap {
         margin-bottom: 20px;

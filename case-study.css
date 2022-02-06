@@ -329,6 +329,8 @@ footer {
    
       section .opening-block h1 {
       font-size: 12vw;
+      height: 100%;
+  padding-top: 11vw;
     }
 
     section h2 {
