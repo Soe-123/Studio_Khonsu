@@ -108,6 +108,7 @@ section .down-link {
     font-weight: 300;
     text-align: center;
     text-decoration: none;
+    letter-spacing: 3px;
 }
 
 section .down-link img {
@@ -351,7 +352,13 @@ footer {
       font-weight: normal;
       margin-bottom: 35px;
       line-height: 1.4;
+    }
 
+    section .down-link {
+      font-family: 'Caslon Doric';
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 2px; 
     }
 
     .small-line {

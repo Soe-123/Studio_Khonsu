@@ -198,7 +198,7 @@ header .menu-btn .closebtn img {
       }
 
       header nav a img{
-        width: 150px;
+        width: 120px;
       }
 
       header nav div:first-of-type {
@@ -211,7 +211,8 @@ header .menu-btn .closebtn img {
 
       .mobile-logo {
         display: block;
-        width: 150px;
+        width: 120px;
+        padding-top: 5px;
       }
 
       header .menu-content {

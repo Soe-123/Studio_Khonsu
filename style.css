@@ -924,6 +924,8 @@ section .background-image {
       section .down-link {
         font-family: 'Caslon Doric';
         font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px; 
       }
 
       section:last-of-type .half-page:first-of-type {
