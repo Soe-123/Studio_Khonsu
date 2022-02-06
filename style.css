@@ -412,6 +412,7 @@ section .background-image {
     .gradient-border {
       height: 100px;
       background: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 255, 0), rgb(255, 255, 255));
+      background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(255, 255, 255));
       position: absolute;
       width: 100%;
       z-index: 3;
@@ -864,6 +865,8 @@ section .background-image {
 
       .gradient-border {
         background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(255, 255, 255));
+        background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(255, 255, 255));
+
       }
 
       .scroll-wrap {
