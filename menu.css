@@ -158,7 +158,7 @@ header .menu-btn a {
 }
 
 header .menu-btn a:hover {
-  opacity: 50%;
+  opacity: 100%;
 }
 
 header a {
