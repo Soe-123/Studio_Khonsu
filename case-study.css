@@ -97,6 +97,10 @@ section .opening-block {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/q_50/v1639502871/Overview/GettyImages-1289868586-1_kg1emt.jpg");
 }
 
+.bunyola {
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/q_50/v1649937950/Sun%20Bonyola/Droneshot_Sa_Punta_0021_tmn6ux.jpg");
+}
+
 section .down-link {
     position: absolute;
     z-index: 10;
