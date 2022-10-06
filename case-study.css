@@ -53,6 +53,10 @@ section .opening-block {
   background-size: cover;
 }
 
+.ulusaba {
+  background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/v1664965654/Ulusaba/24_l8xqes.jpg");
+}
+
 .necker {
   background-image: radial-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0)), url("https://res.cloudinary.com/dtmlnugky/image/upload/c_scale,w_2300/v1639068888/Moskito%20Island%20LR/DJI_0176_gy1jn5.jpg");
 }
